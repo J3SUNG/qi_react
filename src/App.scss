@@ -1,0 +1,27 @@
+body {
+  background-color: #c8c8c8;
+}
+
+.box {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: space-around;
+}
+
+.content {
+  font-size: 25px;
+  display: inline-flex;
+  width: 200px;
+  height: 80px;
+  margin-top: 200px;
+  background-color: #a37263;
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
+}

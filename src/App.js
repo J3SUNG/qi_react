@@ -1,19 +1,22 @@
 import React from "react";
 import { BrowserRouter, Link } from "react-router-dom";
+import "./App.scss";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div>
-        <Link to="/Tableau" className="content">
-          Tableau
-        </Link>
-        <Link to="/Bokeh" className="content">
-          Bokeh
-        </Link>
-        <Link to="/Zeppelin" className="content">
-          Zeppelin
-        </Link>
+      <div className="box">
+        <div className="content">
+          <Link to="/Tableau" className="Tableau">
+            Tableau
+          </Link>
+        </div>
+        <div className="content">
+          <Link to="/Bokeh">Bokeh</Link>
+        </div>
+        <div className="content">
+          <Link to="/Zeppelin">Zeppelin</Link>
+        </div>
       </div>
     </BrowserRouter>
   );
