@@ -1,10 +1,13 @@
 import React from "react";
 import "./PrintImg.scss";
 import tableau_map from "./images/tableau_map.jpg";
-const PrintImg = () => {
+const PrintImg = ({ check }) => {
+  console.log(check);
   return (
     <div className="imgBox">
-      <img src={tableau_map} alt="tableau_map" className="img" />
+      {check.tab ? (
+        <img src={tableau_map} alt="tableau_map" className="img" />
+      ) : undefined}
     </div>
   );
 };

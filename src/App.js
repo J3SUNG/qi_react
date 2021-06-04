@@ -6,37 +6,29 @@ import PrintImg from "./PrintImg.js";
 const App = () => {
   useEffect(() => {});
   const onClickTab = () => {
-    setClickTab(true);
-    setClickBok(false);
-    setClickZep(false);
+    setCheck({ tab: true, bok: false, zep: false });
   };
   const onClickBok = () => {
-    setClickTab(false);
-    setClickBok(true);
-    setClickZep(false);
+    setCheck({ tab: false, bok: true, zep: false });
   };
   const onClickZep = () => {
-    setClickTab(false);
-    setClickBok(false);
-    setClickZep(true);
+    setCheck({ tab: false, bok: false, zep: true });
   };
-  const [clickTab, setClickTab] = useState(false);
-  const [clickBok, setClickBok] = useState(false);
-  const [clickZep, setClickZep] = useState(false);
+  const [check, setCheck] = useState({ tab: false, bok: false, zep: false });
   return (
     <BrowserRouter>
       <div className="box">
-        <div className={clickTab ? "content checked" : "content"}>
+        <div className={check.tab ? "content checked" : "content"}>
           <Link to="/Tableau" className="Tableau" onClick={onClickTab}>
             Tableau
           </Link>
         </div>
-        <div className={clickBok ? "content checked" : "content"}>
+        <div className={check.bok ? "content checked" : "content"}>
           <Link to="/Bokeh" className="Bokeh" onClick={onClickBok}>
             Bokeh
           </Link>
         </div>
-        <div className={clickZep ? "content checked" : "content"}>
+        <div className={check.zep ? "content checked" : "content"}>
           <Link to="/Zeppelin" className="Zeppelin" onClick={onClickZep}>
             Zeppelin
           </Link>
@@ -44,10 +36,10 @@ const App = () => {
       </div>
       <div>
         <Switch>
-          <Route path="/" render={(props) => <PrintImg {...props} />} />
-          <Route path="/Tableau" render={(props) => <PrintImg {...props} />} />
-          <Route path="/Bokeh" render={(props) => <PrintImg {...props} />} />
-          <Route path="/Zeppelin" render={(props) => <PrintImg {...props} />} />
+          <Route path="/" render={() => <PrintImg check={check} />} />
+          <Route path="/Tableau" render={() => <PrintImg check={check} />} />
+          <Route path="/Bokeh" render={() => <PrintImg check={check} />} />
+          <Route path="/Zeppelin" render={() => <PrintImg check={check} />} />
         </Switch>
       </div>
     </BrowserRouter>
