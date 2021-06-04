@@ -14,7 +14,7 @@ body {
   display: inline-flex;
   width: 200px;
   height: 80px;
-  margin-top: 200px;
+  margin-top: 20px;
   background-color: #a37263;
   border-radius: 20px;
   justify-content: space-around;
@@ -24,4 +24,9 @@ body {
 a {
   color: white;
   text-decoration: none !important;
+}
+
+.checked {
+  background-color: #9c4d32;
+  font-weight: bold;
 }
