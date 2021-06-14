@@ -14,7 +14,12 @@ const PrintImg = ({ check }) => {
         <img src={bokeh_plot} alt="bokeh_plot" className="img" />
       ) : undefined}
       {check.zep ? (
-        <iframe src="https://j3sung.tistory.com/" className="img" />
+        <iframe
+          src="http://127.0.0.1:8989/#/notebook/2GAQ518C5/paragraph/20210613-193528_827427093?asIframe"
+          width="500px"
+          height="500px"
+          sandbox="allow-scripts allow-popups"
+        />
       ) : undefined}
     </div>
   );
