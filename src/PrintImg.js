@@ -15,7 +15,7 @@ const PrintImg = ({ check }) => {
       ) : undefined}
       {check.zep ? (
         <img
-          src="https://thisinterestsme.com/LOGO.png?x75840"
+          src="http://localhost:8989/#/notebook/2GAQ518C5/paragraph/20210613-193528_827427093?asIframe"
           alt="zeppelin"
           className="img"
         />
