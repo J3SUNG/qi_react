@@ -13,14 +13,14 @@ const PrintImg = ({ check }) => {
       {check.bok ? (
         <img src={bokeh_plot} alt="bokeh_plot" className="img" />
       ) : undefined}
-      {check.zep ? (
+      {/* {check.zep ? (
         <iframe
-          src="http://127.0.0.1:8989/#/notebook/2GAQ518C5/paragraph/20210613-193528_827427093?asIframe"
+          src={zeppelin_html}
           width="500px"
           height="500px"
           sandbox="allow-scripts allow-popups"
         />
-      ) : undefined}
+      ) : undefined} */}
     </div>
   );
 };
