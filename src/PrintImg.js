@@ -15,7 +15,7 @@ const PrintImg = ({ check }) => {
       ) : undefined}
       {check.zep ? (
         <iframe
-          src="https://www.youtube.com/embed/cWDJoK8zw58"
+          src="http://localhost:8989/#/notebook/2GAQ518C5/paragraph/20210613-193528_827427093?asIframe"
           className="img"
         />
       ) : undefined}
