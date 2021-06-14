@@ -14,9 +14,8 @@ const PrintImg = ({ check }) => {
         <img src={bokeh_plot} alt="bokeh_plot" className="img" />
       ) : undefined}
       {check.zep ? (
-        <img
-          src="http://localhost:8989/#/notebook/2GAQ518C5/paragraph/20210613-193528_827427093?asIframe"
-          alt="zeppelin"
+        <iframe
+          src="https://www.youtube.com/embed/cWDJoK8zw58"
           className="img"
         />
       ) : undefined}
