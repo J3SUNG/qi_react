@@ -14,7 +14,7 @@ const PrintImg = ({ check }) => {
         <img src={bokeh_plot} alt="bokeh_plot" className="img" />
       ) : undefined}
       <iframe
-        src="http://localhost:8989/#/?asIframe"
+        src="http://localhost:8989/#/notebook/2GAQ518C5"
         height="500px"
         width="500px"
       ></iframe>
