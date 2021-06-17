@@ -2,6 +2,7 @@ import React from "react";
 import "./PrintImg.scss";
 import tableau_map from "./images/tableau_map.jpg";
 import bokeh_plot from "./images/bokeh_plot.png";
+import zep_map from "./images/zep_map.png";
 
 const PrintImg = ({ check }) => {
   console.log(check);
